@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <h1>Bienvenido a Django</h1>
+    <div>Nro de personas registradas : {{nro}} </div>
+    <div>
+        <a href="nueva_persona">Agregar Personas</a>
+    </div>
+    <div>
+        <ul>
+            {% for per in personas %}
+            <li>
+                Persona {{per.id}}:
+                {{per.nombre}}
+                {{per.apellido}}
+                {{per.email}}
+                <a href="detalle_persona/{{per.id}}">Ver detalle</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+git clone https://github.com/FemCodersF5Madrid-01/prueba.git
+
+cd prueba
+
+python -m venv venv
+
+pip list
+
+venv\Scripts\activate.bat           (para activar el entorno virtual)
+venv\Scripts\deactivate.bat         (para desactivar el entorno virtual)
+
+pip list
+
+pip freeze > requirements.txt
+
+subir
+git add .
+git commit -m "haciendo pruebas"
